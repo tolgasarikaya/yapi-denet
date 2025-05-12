@@ -1,4 +1,3 @@
-//src/app/provinces/[slug]/pages.tsx
 "use client";
 
 import TableNavigation from "@/components/provinces/TableNavigation";
@@ -24,7 +23,7 @@ export default function ProvinceDetailPage() {
 
   const provinceName = getProvinceNameById(id) || `İl ${id}`;
 
-  // Aktif tablo içeriğini belirle
+  // Aktif tablo içeriği
   const renderTableContent = () => {
     switch (tableType) {
       case "statistics":
@@ -61,10 +60,8 @@ export default function ProvinceDetailPage() {
           </h1>
         </div>
 
-        {/* Tablo Navigasyon Barı */}
         <TableNavigation />
 
-        {/* Tablo içeriği */}
         <div className="p-0 bg-white rounded-b-lg">{renderTableContent()}</div>
       </div>
     </div>

@@ -1,4 +1,3 @@
-// src/services/api/laboratoriesAPI.ts
 import { ApiResponse, Laboratory, Sort } from "@/types/api";
 import { postWithLocationFilter } from "./utils";
 

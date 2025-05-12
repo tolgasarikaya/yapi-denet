@@ -1,4 +1,3 @@
-// src/services/api/buildingInspectorsAPI.ts
 import { ApiResponse, BuildingInspector, Sort } from "@/types/api";
 import { postWithLocationFilter } from "./utils";
 

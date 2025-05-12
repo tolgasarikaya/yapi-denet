@@ -1,6 +1,4 @@
-// src/constants/styles.ts
-
-// Bileşen boyutları
+// Genel boyutlar
 export const SIZES = {
   SPINNER: {
     SM: "h-4 w-4",
@@ -16,7 +14,7 @@ export const SIZES = {
   },
 };
 
-// Animasyon gecikmeleri
+// Animasyon
 export const ANIMATION_DELAYS = {
   NONE: "0ms",
   SHORT: "150ms",
@@ -24,7 +22,6 @@ export const ANIMATION_DELAYS = {
   LONG: "500ms",
 };
 
-// Ortam sınıf isimleri
 export const COMMON_CLASSES = {
   CONTAINER: "container max-w-screen-xl mx-auto px-4",
   CARD: "border border-slate-200 rounded-lg shadow-sm",
@@ -44,7 +41,6 @@ export const COMMON_CLASSES = {
   },
 };
 
-// Durum göstergeleri için stil sabitleri
 export const STATUS_STYLES = {
   ACTIVE: "bg-green-600 text-white",
   INACTIVE: "bg-red-100 text-red-800",

@@ -1,4 +1,3 @@
-// src/lib/map/geo.ts
 import { FeatureCollection, Feature, Geometry } from "geojson";
 
 export function filterGeoJsonPolygons(

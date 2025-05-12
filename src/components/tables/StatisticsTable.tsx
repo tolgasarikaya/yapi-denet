@@ -1,4 +1,3 @@
-// src/components/tables/StatisticsTable.tsx
 "use client";
 import { useMemo } from "react";
 import { AgGridReact } from "@ag-grid-community/react";
@@ -98,9 +97,6 @@ export default function StatisticsTable({ provinceId }: StatisticsTableProps) {
     ],
     []
   );
-
-  // İstatistik tablosu özel bir durum olduğu için tam olarak BaseTable'ı kullanmak zorunda değiliz
-  // Bu durumda doğrudan özgün kodu koruyabiliriz
 
   if (isLoading) {
     return <LoadingSpinner />;

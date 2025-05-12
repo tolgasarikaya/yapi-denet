@@ -1,4 +1,3 @@
-// src/hooks/useGeoData.ts
 import { useState, useEffect } from "react";
 import { FeatureCollection } from "geojson";
 import { CACHE_TIMES, RETRY_COUNTS } from "@/constants/api";
@@ -28,9 +27,8 @@ export default function useGeoData(url: string = "/turkey-provinces.json") {
           setData(jsonData);
           setError(null);
 
-          // Veriyi belirli bir süre sonra yenileme (opsiyonel)
           cacheTimeout = setTimeout(() => {
-            if (isMounted) setData(null); // Veriyi yeniden yüklemek için tetikle
+            if (isMounted) setData(null);
           }, CACHE_TIMES.GEO_DATA);
         }
       } catch (err) {
@@ -39,10 +37,9 @@ export default function useGeoData(url: string = "/turkey-provinces.json") {
         if (isMounted) {
           setError(err instanceof Error ? err.message : "Unknown error");
 
-          // Yeniden deneme mantığı (opsiyonel)
           if (retryCount < RETRY_COUNTS.GEO_DATA) {
             setRetryCount((prevCount) => prevCount + 1);
-            setTimeout(loadGeoData, 1000); // 1 saniye bekle ve yeniden dene
+            setTimeout(loadGeoData, 1000);
           }
         }
       } finally {

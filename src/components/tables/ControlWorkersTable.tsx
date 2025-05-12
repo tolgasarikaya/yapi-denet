@@ -1,4 +1,3 @@
-// src/components/tables/ControlWorkersTable.tsx
 "use client";
 import { useMemo } from "react";
 import { ColDef } from "@ag-grid-community/core";

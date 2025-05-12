@@ -1,4 +1,3 @@
-// src/components/tables/DistributionListTable.tsx
 "use client";
 import { useMemo, useCallback } from "react";
 import { ColDef, ValueFormatterParams } from "@ag-grid-community/core";
@@ -30,14 +29,13 @@ export default function DistributionListTable({
     });
   }, []);
 
-  // Alan (m2) formatlaması için
+  // Alan format
   const areaFormatter = useCallback((params: ValueFormatterParams) => {
     if (!params.value && params.value !== 0) return "";
     const formattedValue = params.value.toString().replace(".", ",");
     return `${formattedValue} m²`;
   }, []);
 
-  // Kolon tanımları
   const columnDefs = useMemo<ColDef<Distribution>[]>(
     () => [
       {

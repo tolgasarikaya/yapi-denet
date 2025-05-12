@@ -1,13 +1,10 @@
-// src/types/table.ts
 import {
   ColDef,
   ICellRendererParams,
   GetRowIdParams,
 } from "@ag-grid-community/core";
 
-/**
- * Tüm tablolar için temel özellikler
- */
+// Tüm tablolar için temel type
 export interface BaseTableProps<T> {
   columnDefs: ColDef<T>[];
   rowData: T[] | undefined;
@@ -23,33 +20,21 @@ export interface BaseTableProps<T> {
   quickFilterMatcher?: (parts: string[], text: string) => boolean;
 }
 
-/**
- * Durumu olan veri tiplerinin temel arayüzü (çalışanlar, mühendisler vb.)
- */
 export interface StatusData {
   working: boolean;
 }
 
-/**
- * Durum sütunu için hücre oluşturucu parametreleri
- */
 export interface StatusRendererParams<T extends StatusData>
   extends ICellRendererParams {
   data: T;
   value: boolean;
 }
 
-/**
- * İletişim bilgisi olan veri tiplerinin temel arayüzü
- */
 export interface ContactData {
   phone: string;
   address?: string;
 }
 
-/**
- * Kişi bilgisi olan veri tiplerinin temel arayüzü
- */
 export interface PersonData {
   personName: string;
   personSurName: string;
@@ -58,9 +43,6 @@ export interface PersonData {
   occupationalRegistrationNumber?: string;
 }
 
-/**
- * Formatlayıcı fonksiyonlar için tip tanımı
- */
 export interface ValueFormatters {
   dateFormatter: (value: number | string) => string;
   phoneFormatter: (value: string) => string;

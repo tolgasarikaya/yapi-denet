@@ -1,4 +1,3 @@
-// src/constants/routes.ts
 import {
   BarChart3,
   Building2,

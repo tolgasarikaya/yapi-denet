@@ -1,4 +1,3 @@
-// src/services/api/statisticsAPI.ts
 import apiClient from "./client";
 import { ApiResponse, Statistics } from "@/types/api";
 

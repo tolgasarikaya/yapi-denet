@@ -1,4 +1,3 @@
-// src/lib/map/styles.ts
 import { PathOptions } from "leaflet";
 import { MAP_STYLES } from "@/constants/mapSettings";
 

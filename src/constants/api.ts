@@ -1,15 +1,14 @@
-// src/constants/api.ts
-// API zaman aşımı (ms)
+// API zaman aşımı
 export const API_TIMEOUT = 10000;
 
-// API başlıkları
+// API headers
 export const API_HEADERS = {
   "Content-Type": "application/json",
 };
 
-// API stale süreleri (ms)
+// API stale
 export const CACHE_TIMES = {
-  DEFAULT: 5 * 60 * 1000, // 5 dakika
+  DEFAULT: 5 * 60 * 1000,
   STATISTICS: 5 * 60 * 1000,
   GEO_DATA: 5 * 60 * 1000,
   ORGANIZATIONS: 5 * 60 * 1000,
@@ -22,7 +21,7 @@ export const CACHE_TIMES = {
 };
 
 export const RETRY_COUNTS = {
-  DEFAULT: 2, // Varsayılan yeniden deneme sayısı
+  DEFAULT: 2,
   STATISTICS: 2,
   GEO_DATA: 2,
   ORGANIZATIONS: 2,
@@ -30,7 +29,7 @@ export const RETRY_COUNTS = {
   AUDITORS: 2,
 };
 
-// Varlık isimleri - hata mesajları ve etiketler için
+// Tablolar
 export const ENTITY_NAMES = {
   STATISTICS: "İstatistik",
   BUILDING_INSPECTOR: "Yapı Denetim Kurumu",

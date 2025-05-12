@@ -1,4 +1,3 @@
-// src/hooks/useQueries.ts
 import { useQuery, UseQueryResult } from "@tanstack/react-query";
 import {
   ApiResponse,
@@ -20,7 +19,7 @@ import {
   ControlWorkersAPI,
   SiteSupervisorsAPI,
   DistributionAPI,
-} from "@/services/api/index"; // Yeni import
+} from "@/services/api/index";
 
 import { CACHE_TIMES } from "@/constants/api";
 
@@ -79,6 +78,7 @@ export function useAuditors(
 }
 
 // YKE Mimar ve Mühendisler için hook
+
 export function useYKEEngineers(
   locationId?: number
 ): UseQueryResult<ApiResponse<YKEEngineer>, Error> {
@@ -91,6 +91,7 @@ export function useYKEEngineers(
 }
 
 // Yardımcı kontrol elemanları için hook
+
 export function useControlWorkers(
   locationId?: number
 ): UseQueryResult<ApiResponse<ControlWorker>, Error> {
@@ -104,6 +105,7 @@ export function useControlWorkers(
 }
 
 // Şantiye şefleri için hook
+
 export function useSiteSupervisors(
   locationId?: number
 ): UseQueryResult<ApiResponse<SiteSupervisor>, Error> {
@@ -117,6 +119,7 @@ export function useSiteSupervisors(
 }
 
 // Dağıtım listesi için hook
+
 export function useDistribution(
   locationId?: number
 ): UseQueryResult<Distribution[], Error> {

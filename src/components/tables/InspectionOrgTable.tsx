@@ -1,4 +1,3 @@
-// src/components/tables/InspectionOrgTable.tsx
 "use client";
 import { useMemo, useCallback } from "react";
 import {

@@ -1,4 +1,3 @@
-// src/services/api/client.ts
 import axios from "axios";
 import { API_TIMEOUT, API_HEADERS } from "@/constants/api";
 

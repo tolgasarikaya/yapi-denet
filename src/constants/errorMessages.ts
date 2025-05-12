@@ -1,13 +1,11 @@
-// src/constants/errorMessages.ts
-
 export const ERROR_MESSAGES = {
-  // Genel hata mesajı
+  // Genel hata
   GENERIC_ERROR: "Bilinmeyen hata",
 
-  // Veri yükleme hatası mesajı
+  // Veri yükleme hatası
   LOAD_FAILED: (entityName: string) =>
     `${entityName} verileri yüklenirken bir sorun oluştu`,
 
-  // Veri bulunamadı mesajı
+  // Veri bulunamadı
   NO_DATA: (entityName: string) => `Herhangi bir ${entityName} bulunamadı`,
 };

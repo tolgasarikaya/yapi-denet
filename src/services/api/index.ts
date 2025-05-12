@@ -1,4 +1,3 @@
-// src/services/api/index.ts
 export * from "./statisticsAPI";
 export * from "./buildingInspectorsAPI";
 export * from "./laboratoriesAPI";

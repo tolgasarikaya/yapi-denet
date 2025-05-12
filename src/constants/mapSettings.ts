@@ -1,4 +1,3 @@
-// src/constants/mapSettings.ts
 import { SIZES } from "@/constants/styles";
 
 // Harita sınırları

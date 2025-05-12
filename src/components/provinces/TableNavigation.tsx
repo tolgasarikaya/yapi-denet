@@ -1,4 +1,3 @@
-// src/components/provinces/TableNavigation.tsx
 "use client";
 
 import { useSearchParams, useRouter, usePathname } from "next/navigation";

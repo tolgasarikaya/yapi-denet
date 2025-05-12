@@ -1,4 +1,3 @@
-// src/services/api/siteSupervisorsAPI.ts
 import { ApiResponse, SiteSupervisor } from "@/types/api";
 import { postWithLocationId } from "./utils";
 

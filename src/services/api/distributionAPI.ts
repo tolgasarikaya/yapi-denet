@@ -1,4 +1,3 @@
-// src/services/api/distributionAPI.ts
 import apiClient from "./client";
 import { Distribution } from "@/types/api";
 

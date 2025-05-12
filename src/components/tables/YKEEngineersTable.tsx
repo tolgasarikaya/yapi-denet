@@ -1,4 +1,3 @@
-// src/components/tables/YKEEngineersTable.tsx (örnek)
 import { useMemo } from "react";
 import { ColDef } from "@ag-grid-community/core";
 import { useYKEEngineers } from "@/hooks/useQueries";
@@ -23,7 +22,6 @@ export default function YKEEngineersTable({
     parseInt(provinceId, 10)
   );
 
-  // Kolon tanımları
   const columnDefs = useMemo<ColDef<YKEEngineer>[]>(
     () => [
       {
@@ -67,7 +65,7 @@ export default function YKEEngineersTable({
         headerName: "Durumu",
         sortable: true,
         filter: "agTextColumnFilter",
-        filterParams: STATUS_FILTER_PARAMS, // Sabit değerleri kullanıyoruz
+        filterParams: STATUS_FILTER_PARAMS,
         width: 120,
         cellRenderer: WorkingStatusRenderer,
         valueGetter: workingStatusValueGetter,

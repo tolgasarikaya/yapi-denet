@@ -1,4 +1,3 @@
-// src/components/tables/SiteSupervisorsTable.tsx
 "use client";
 import { useMemo } from "react";
 import { ColDef } from "@ag-grid-community/core";
@@ -19,7 +18,6 @@ export default function SiteSupervisorsTable({
     parseInt(provinceId, 10)
   );
 
-  // Kolon tanımları
   const columnDefs = useMemo<ColDef<SiteSupervisor>[]>(
     () => [
       {

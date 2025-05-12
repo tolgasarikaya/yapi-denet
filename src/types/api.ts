@@ -1,4 +1,3 @@
-// src/types/api.ts
 import { ContactData, PersonData, StatusData } from "./table";
 
 export interface Sort {
@@ -29,7 +28,6 @@ export interface ApiPostRequest {
   filter?: (string | number)[];
 }
 
-// Veri tipleri daha spesifik tanımlar ve ortak tiplerden kalıtım alır
 export interface Statistics {
   provinceId: number;
   countTotalYibf: number;

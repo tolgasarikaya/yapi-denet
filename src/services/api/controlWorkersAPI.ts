@@ -1,4 +1,3 @@
-// src/services/api/controlWorkersAPI.ts
 import { ApiResponse, ControlWorker } from "@/types/api";
 import { postWithLocationId } from "./utils";
 

@@ -1,4 +1,3 @@
-//src/components/layout/Header.tsx
 "use client";
 
 import Link from "next/link";
@@ -48,7 +47,6 @@ export default function Header() {
           </Link>
         </nav>
 
-        {/* Giriş ve kayıt butonları veya kullanıcı butonu */}
         <div className="hidden items-center space-x-2 md:flex">
           <SignedIn>
             <UserButton
@@ -80,7 +78,6 @@ export default function Header() {
           </SignedOut>
         </div>
 
-        {/* Mobil menü butonu */}
         <button
           className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-white md:hidden"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

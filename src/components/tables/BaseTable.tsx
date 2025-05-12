@@ -1,4 +1,3 @@
-// src/components/tables/BaseTable.tsx
 import { useState, useMemo, useCallback, useRef } from "react";
 import { AgGridReact } from "@ag-grid-community/react";
 import { ColDef } from "@ag-grid-community/core";
@@ -9,9 +8,7 @@ import { BaseTableProps } from "@/types/table";
 import { TABLE_SETTINGS } from "@/constants/tableSettings";
 import { ERROR_MESSAGES } from "@/constants/errorMessages";
 
-/**
- * Tüm tablo bileşenleri için temel bileşen
- */
+// Base tablo yapısı
 export default function BaseTable<T>({
   columnDefs,
   rowData,
@@ -29,7 +26,7 @@ export default function BaseTable<T>({
   const [quickFilterText, setQuickFilterText] = useState("");
   const gridRef = useRef<AgGridReact>(null);
 
-  // Default büyük/küçük harf duyarsız hızlı arama
+  // Default case insensitve arama
   const defaultQuickFilterMatcher = useCallback(
     (
       quickFilterParts: string[],

@@ -1,4 +1,3 @@
-// src/components/tables/LabTable.tsx
 "use client";
 import { useMemo, useCallback } from "react";
 import {
@@ -22,13 +21,13 @@ export default function LabTable({ provinceId }: LabTableProps) {
     parseInt(provinceId, 10)
   );
 
-  // Telefon numarası formatlaması
+  // Telefon numarası formatlama
   const phoneFormatter = useCallback((params: ValueFormatterParams) => {
     if (!params.value) return "";
     return formatPhoneNumber(params.value);
   }, []);
 
-  // Telefon numarası için valueGetter - filtrelemede formatlanmış hali kullanılacak
+  // Telefon numarası için
   const phoneValueGetter = useCallback(
     (params: ValueGetterParams<Laboratory>) => {
       if (!params.data) return "";
@@ -37,7 +36,6 @@ export default function LabTable({ provinceId }: LabTableProps) {
     []
   );
 
-  // Kolon tanımları
   const columnDefs = useMemo<ColDef<Laboratory>[]>(
     () => [
       {

@@ -1,4 +1,3 @@
-// src/services/api/auditorsAPI.ts
 import { ApiResponse, Auditor } from "@/types/api";
 import { postWithLocationId } from "./utils";
 

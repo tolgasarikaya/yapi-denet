@@ -1,4 +1,3 @@
-// src/components/common/LoadingSpinner.tsx
 import { cn } from "@/lib/utils";
 import { SIZES, ANIMATION_DELAYS } from "@/constants/styles";
 
@@ -21,7 +20,6 @@ export function LoadingSpinner({
 }: LoadingSpinnerProps) {
   const sizeClasses = SIZES.SPINNER;
 
-  // spinnerSize'ı büyük harfe dönüştür
   const sizeKey = spinnerSize.toUpperCase() as keyof typeof sizeClasses;
 
   const renderSpinner = () => {
@@ -34,7 +32,7 @@ export function LoadingSpinner({
                 key={i}
                 className={cn(
                   "rounded-full bg-primary",
-                  sizeClasses.SM, // Noktalar için sabit SM boyutu
+                  sizeClasses.SM,
                   "animate-bounce",
                   i === 0 && "animation-delay-0",
                   i === 1 && "animation-delay-150",
@@ -58,7 +56,7 @@ export function LoadingSpinner({
           <div
             className={cn(
               "rounded-full bg-primary/20 animate-pulse flex items-center justify-center",
-              sizeClasses[sizeKey], // Büyük harfli anahtar kullan
+              sizeClasses[sizeKey],
               spinnerClassName
             )}
           >
@@ -70,7 +68,7 @@ export function LoadingSpinner({
           <div
             className={cn(
               "animate-spin rounded-full border-t-2 border-b-2 border-primary",
-              sizeClasses[sizeKey], // Büyük harfli anahtar kullan
+              sizeClasses[sizeKey],
               spinnerClassName
             )}
           ></div>

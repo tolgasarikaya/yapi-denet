@@ -1,10 +1,7 @@
-// src/components/tables/renderers/StatusRenderer.tsx
 import { StatusData, StatusRendererParams } from "@/types/table";
 import { STATUS_STYLES } from "@/constants/styles";
 
-/**
- * Çalışma durumu için hücre oluşturucu
- */
+// Çalışma durumu için cell renderer
 export function WorkingStatusRenderer<T extends StatusData>(
   params: StatusRendererParams<T>
 ) {
@@ -21,9 +18,7 @@ export function WorkingStatusRenderer<T extends StatusData>(
   );
 }
 
-/**
- * Çalışma durumunu metin olarak döndüren fonksiyon
- */
+// boolean => text
 export function workingStatusValueGetter<T extends StatusData>(params: {
   data: T | undefined;
 }) {

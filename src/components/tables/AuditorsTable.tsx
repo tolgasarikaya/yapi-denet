@@ -1,4 +1,3 @@
-// src/components/tables/AuditorsTable.tsx
 "use client";
 import { ModuleRegistry } from "@ag-grid-community/core";
 import { ClientSideRowModelModule } from "@ag-grid-community/client-side-row-model";
