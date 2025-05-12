@@ -165,6 +165,10 @@ Uygulama, aşağıdaki stratejilerle optimize edilmiştir:
 - **Memoization**: `useMemo` ve `useCallback` ile gereksiz yeniden render'ların önlenmesi
 - **Image Optimization**: Next.js'in yerleşik görüntü optimizasyonu
 
+## 👨‍💻 Geliştirici
+
+Email: (tolga.sarikaya.dev@gmail.com)
+
 ---
 
 Geliştirici: [Tolga SARIKAYA](https://github.com/tolgasarikaya)
